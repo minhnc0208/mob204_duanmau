@@ -32,7 +32,7 @@ public class ListSachActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         setTitle("SÁCH");
         setContentView(R.layout.listsach_activity);
         lvBook = findViewById(R.id.lvBook);

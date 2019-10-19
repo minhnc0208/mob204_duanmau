@@ -11,18 +11,21 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
 
 import com.example.demo_ps08611_asm_androidcoban.Adapter.NguoidungAdapter;
 import com.example.demo_ps08611_asm_androidcoban.R;
 import com.example.demo_ps08611_asm_androidcoban.SQL_ASM.UsersDAO;
 import com.example.demo_ps08611_asm_androidcoban.model.Usermodel;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListNguoiDungActivity extends AppCompatActivity {
+public class ListNguoiDungActivity extends AppCompatActivity  {
     public static List<Usermodel> dsNguoiDung = new ArrayList<>();
     ListView lvNguoiDung;
     NguoidungAdapter adapter = null;
@@ -32,8 +35,8 @@ public class ListNguoiDungActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("NGƯỜI DÙNG");
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-      getActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         setContentView(R.layout.activity_listnguoidung);
         lvNguoiDung = findViewById(R.id.lvNguoiDung);
         nguoiDungDAO = new UsersDAO(ListNguoiDungActivity.this);
@@ -131,5 +134,7 @@ public class ListNguoiDungActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
 

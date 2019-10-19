@@ -30,7 +30,7 @@ public class ListTheLoaiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+       getActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle("THỂ LOẠI");
         setContentView(R.layout.fragment_the_loai_);
         lvTheLoai = findViewById(R.id.lvTheLoai);
