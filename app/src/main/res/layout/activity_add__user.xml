@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/as"
+    tools:context=".Activity.ThemNguoiDungActivity">
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:text="ADD A NEW USER "
+        android:textSize="27sp" />
+
+    <EditText
+        android:drawableLeft="@drawable/login"
+        android:id="@+id/edUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="28dp"
+        android:hint=" User Name"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:drawableLeft="@drawable/pas"
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edUser"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint=" PassWord"
+        android:inputType="textPassword"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edRePass"
+        android:drawableLeft="@drawable/pas"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPass"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint=" PassWord"
+        android:inputType="textPassword"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edPhone"
+        android:drawableLeft="@drawable/number"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edRePass"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint=" Number Phone"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edFullName"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhone"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:drawableLeft="@drawable/login"
+        android:hint=" Full Name"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edFullName">
+
+        <Button
+            android:id="@+id/btnAddUser"
+            android:textColor="#247936"
+            android:layout_width="150dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/duongvien_goctron"
+            android:layout_marginTop="20dp"
+            android:onClick="addUser"
+            android:text=" Add " />
+
+        <Button
+            android:textColor="#247936"
+            android:id="@+id/btnCancelUser"
+            android:layout_width="150dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="20dp"
+            android:onClick="quaylai"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/duongvien_goctron"
+            android:text="Cancel" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="40dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:id="@+id/btnShowUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showUsers"
+            android:background="@drawable/duongvien_goctron"
+            android:text="User list"
+            android:textColor="#247936" />
+
+    </LinearLayout>
+</RelativeLayout>

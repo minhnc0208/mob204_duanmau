@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    android:layout_margin="15dp"
+    tools:context=".TheLoaiActivity">
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/imageView"
+        android:layout_width="352dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/theloai2" />
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/edMa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID Category" />
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/edTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category Name" />
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/edVi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location" />
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/edMo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Detail" />
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSoLuongsua">
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="165dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:background="#247635"
+            android:text="ADD"
+            android:onClick="themtheloai"
+            android:textColor="#fff" />
+
+        <Button
+
+            android:id="@+id/btnHuy"
+            android:layout_width="165dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:onClick="quaylai"
+            android:background="#247635"
+            android:text="Cancel"
+            android:textColor="#fff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="23dp"
+        android:orientation="vertical"
+        android:layout_below="@id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnDanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category List "
+
+            android:onClick="showtheloai"
+            android:textColor="#247936" />
+
+    </LinearLayout>
+</LinearLayout>

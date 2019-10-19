@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meo">
+
+
+
+    <TextView
+        android:id="@+id/ql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="211dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/ql"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/cateicon" />
+
+    <EditText
+        android:id="@+id/edMaSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint=" Book ID"
+        android:layout_marginTop="10dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/spnTheLoai"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edMaSach"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_weight="4"
+        />
+
+    <EditText
+
+        android:id="@+id/edTenSach"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnTheLoai"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint=" Book Name"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/edTacGia"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTenSach"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint=" Author"
+        android:textStyle="bold" />
+    <EditText
+
+        android:id="@+id/edNXB"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTacGia"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint=" Publishing Company"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/edGiaBia"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNXB"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint=" Price"
+        android:textStyle="bold" />
+    <EditText
+
+        android:id="@+id/edSoLuong"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edGiaBia"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint=" Number"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/edSoLuong">
+
+        <Button
+            android:id="@+id/btnAddBook"
+            android:layout_width="165dp"
+            android:layout_height="62dp"
+            android:background="@drawable/duongvien_goctron"
+            android:onClick="addBook"
+            android:text=" Update "
+            android:textColor="#247936"  />
+
+        <Button
+
+            android:id="@+id/btnCancelBook"
+            android:layout_width="165dp"
+            android:layout_height="62dp"
+            android:background="@drawable/duongvien_goctron"
+            android:onClick="cancel"
+            android:text="Cancel"
+            android:textColor="#247936" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="23dp"
+        android:orientation="vertical"
+        android:layout_below="@id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnShowBook"
+            android:layout_width="match_parent"
+            android:onClick="showBook"
+            android:layout_height="wrap_content"
+            android:background="@drawable/duongvien_goctron"
+            android:text="Book List "
+            android:textColor="#247936" />
+
+    </LinearLayout>
+</RelativeLayout>

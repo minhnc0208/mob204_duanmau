@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add"
+        android:icon="@drawable/add"
+        android:title="Thêm vào" />
+    <item android:id="@+id/btnChangePass"
+        android:icon="@drawable/pas"
+        android:title="Đổi mật khẩu" />
+    <item android:id="@+id/btnLogout"
+        android:icon="@drawable/ic_close"
+        android:title="Đăng xuất" />
+</menu>

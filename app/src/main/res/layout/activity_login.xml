@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/me3"
+    tools:context=".Activity.Login">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:text="Be All You Can Be "-->
+<!--        android:textSize="27sp" />-->
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="139dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/fpt" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/tx1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="User name"
+
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@android:color/background_light"
+            android:textColorLink="@android:color/background_light" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Email Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tx3"
+        android:layout_below="@+id/tx1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email11"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/colorAccent"
+            android:inputType="textPassword"
+            android:scrollbarThumbHorizontal="@android:color/background_light"
+            android:scrollbarThumbVertical="@android:color/background_light" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/tx3"
+        android:id="@+id/tx2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password11"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:textColor="@color/colorAccent"
+            android:inputType="textPassword"
+            android:scrollbarThumbHorizontal="@android:color/background_light"
+            android:scrollbarThumbVertical="@android:color/background_light"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_margin="23dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/tx2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:textColor="#247936"
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:background="@drawable/duongvien_goctron"
+            android:layout_height="wrap_content"
+            android:text=" Registration " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:layout_height="150dp">
+
+            <Button
+                android:id="@+id/link_login"
+                android:layout_width="150dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:background="@drawable/duongvien_g"
+                android:text="Login"
+                android:textColor="#fff" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnCancel"
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:background="@drawable/duongvien_g"
+                android:text="     Cancel      "
+                android:textColor="#fff" />
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you don't have an UserAccount "
+        android:textColor="#111111"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Registration and then Login to use my App "
+            android:textColor="#111111"
+            android:textColorHighlight="@color/design_default_color_primary"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>
