@@ -8,34 +8,33 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.demo_ps08611_asm_androidcoban.Adapter.NguoidungAdapter;
 import com.example.demo_ps08611_asm_androidcoban.R;
 import com.example.demo_ps08611_asm_androidcoban.SQL_ASM.UsersDAO;
 import com.example.demo_ps08611_asm_androidcoban.model.Usermodel;
-import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListNguoiDungActivity extends AppCompatActivity  {
+public class ListNguoiDungActivity extends AppCompatActivity {
     public static List<Usermodel> dsNguoiDung = new ArrayList<>();
     ListView lvNguoiDung;
     NguoidungAdapter adapter = null;
     UsersDAO nguoiDungDAO;
+    Toolbar toolbar;
+    ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("NGƯỜI DÙNG");
-
 
         setContentView(R.layout.activity_listnguoidung);
         lvNguoiDung = findViewById(R.id.lvNguoiDung);
@@ -43,6 +42,18 @@ public class ListNguoiDungActivity extends AppCompatActivity  {
         dsNguoiDung = nguoiDungDAO.getAllNguoiDung();
         adapter = new NguoidungAdapter(this, dsNguoiDung);
         lvNguoiDung.setAdapter(adapter);
+
+
+        toolbar = findViewById(R.id.tool1);
+
+        back = findViewById(R.id.back1);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         lvNguoiDung.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -53,7 +64,7 @@ public class ListNguoiDungActivity extends AppCompatActivity  {
                 b.putString("PHONE", dsNguoiDung.get(position).getPhone());
                 b.putString("FULLNAME", dsNguoiDung.get(position).getHoTen());
 
-                intent.putExtra("dulieu",b);
+                intent.putExtra("dulieu", b);
                 startActivity(intent);
             }
         });

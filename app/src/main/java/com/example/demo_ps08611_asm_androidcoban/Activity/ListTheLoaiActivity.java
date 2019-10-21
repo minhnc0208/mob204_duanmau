@@ -30,12 +30,12 @@ public class ListTheLoaiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       getActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle("THỂ LOẠI");
+
         setContentView(R.layout.fragment_the_loai_);
         lvTheLoai = findViewById(R.id.lvTheLoai);
         registerForContextMenu(lvTheLoai);
 
+        setTitle("THỂ LOẠI");
         theLoaiDAO = new CategoryDAO(ListTheLoaiActivity.this);
         dsTheLoai = theLoaiDAO.getAllTheLoai();
         adapter = new TheloaiAdapter(this, dsTheLoai);

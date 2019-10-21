@@ -27,7 +27,7 @@ public class Splash_Srceen_Activity extends AppCompatActivity {
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.anima) ;
         ivs.startAnimation(myanim);
         final Intent i = new Intent(this, dangki.class);
-        CountDownTimer countDownTimer = new CountDownTimer(2000,2000) {
+        CountDownTimer countDownTimer = new CountDownTimer(5000,5000) {
             @Override
             public void onTick(long millisUntilFinished) {
 

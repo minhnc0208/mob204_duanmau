@@ -5,6 +5,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Activity.ListNguoiDungActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool1"
+            android:background="#2196F3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/back1"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
     <ListView
         android:id="@+id/lvNguoiDung"
         android:layout_width="match_parent"

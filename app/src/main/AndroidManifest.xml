@@ -10,37 +10,74 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Activity.TheLoaiDetailActivity"/>
-        <activity android:name=".Activity.ChangePassActivity"/>
-        <activity android:name=".Activity.Chitiet"/>
-        <activity android:name=".Activity.dangki"/>
-        <activity android:name=".Activity.HoaDonChiTietActivity"/>
-        <activity android:name=".Activity.HoaDonDetailActivity"/>
+
+        <activity android:name=".Activity.TheLoaiDetailActivity">
+
+        </activity>
+        <activity android:name=".Activity.ChangePassActivity">
+
+        </activity>
+        <activity android:name=".Activity.Chitiet">
+
+        </activity>
+        <activity android:name=".Activity.dangki">
+
+        </activity>
+        <activity android:name=".Activity.HoaDonChiTietActivity">
+
+        </activity>
+        <activity android:name=".Activity.HoaDonDetailActivity">
+
+        </activity>
         <activity android:name=".Activity.Home">
+
+        </activity>
+        <activity android:name=".Activity.ListBanChayActivity">
+
+        </activity>
+        <activity android:name=".Activity.ListHoaDonActivity">
+
+        </activity>
+        <activity android:name=".Activity.ListNguoiDungActivity">
+
+        </activity>
+        <activity android:name=".Activity.ListSachActivity">
+
+        </activity>
+        <activity android:name=".Activity.ListTheLoaiActivity">
+
+        </activity>
+        <activity android:name=".Activity.ListThongKeActivity">
+
+        </activity>
+        <activity android:name=".Activity.Login">
+
+        </activity>
+        <activity android:name=".Activity.NguoiDungDetailActivity">
+
+        </activity>
+        <activity android:name=".Activity.SachDetailActivity">
+
+        </activity>
+        <activity android:name=".Activity.Splash_Srceen_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.ListBanChayActivity"/>
-        <activity android:name=".Activity.ListHoaDonActivity"/>
-        <activity android:name=".Activity.ListNguoiDungActivity"/>
-        <activity android:name=".Activity.ListSachActivity"/>
-        <activity android:name=".Activity.ListTheLoaiActivity"/>
-        <activity android:name=".Activity.ListThongKeActivity"/>
-        <activity android:name=".Activity.Login">
+        <activity android:name=".Activity.TheLoaiActivity">
 
         </activity>
-        <activity android:name=".Activity.NguoiDungDetailActivity"/>
-        <activity android:name=".Activity.SachDetailActivity"/>
-        <activity android:name=".Activity.Splash_Srceen_Activity">
+        <activity android:name=".Activity.ThemHoaDonActivity">
 
         </activity>
-        <activity android:name=".Activity.TheLoaiActivity"/>
-        <activity android:name=".Activity.ThemHoaDonActivity"/>
-        <activity android:name=".Activity.ThemNguoiDungActivity"/>
-        <activity android:name=".Activity.ThemSachActivity"/>
+        <activity android:name=".Activity.ThemNguoiDungActivity">
+
+        </activity>
+        <activity android:name=".Activity.ThemSachActivity">
+
+        </activity>
         <activity android:name=".MainActivity">
 
         </activity>
