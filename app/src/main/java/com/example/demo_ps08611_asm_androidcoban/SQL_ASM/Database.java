@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class Database extends SQLiteOpenHelper {
     public Database(Context context) {
-        super(context, "ASM.db", null, 1);
+        super(context, "ASM.db", null, 2);
     }
 
 

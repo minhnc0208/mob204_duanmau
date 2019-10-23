@@ -7,10 +7,6 @@
     android:background="@drawable/as"
     tools:context=".Activity.ThemNguoiDungActivity">
 
-
-
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

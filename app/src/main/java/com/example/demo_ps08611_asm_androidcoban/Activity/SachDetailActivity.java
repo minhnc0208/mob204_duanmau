@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -17,7 +18,8 @@ public class SachDetailActivity extends AppCompatActivity {
     EditText maSach, tenSach, tacgia, nxb, giaban, soluong;
     BookDAO sachDAO;
     Spinner spnTheLoaisua;
-    String masua, tensua, tacsua, nxbsua, giasua, sosua,  maSachk;
+    String masua, tensua, tacsua, nxbsua, giasua, sosua, maSachk;
+    Button btnAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +33,9 @@ public class SachDetailActivity extends AppCompatActivity {
         nxb = findViewById(R.id.edNXBsua);
         giaban = findViewById(R.id.edGiaBiasua);
         soluong = findViewById(R.id.edSoLuongsua);
-
+        btnAdd = findViewById(R.id.btnAdd);
         sachDAO = new BookDAO(this);
-        Intent in = getIntent();
+        final Intent in = getIntent();
         Bundle k = in.getExtras();
 
         maSachk = k.getString("MASACH");
@@ -49,6 +51,13 @@ public class SachDetailActivity extends AppCompatActivity {
         nxb.setText(nxbsua);
         giaban.setText(giasua);
         soluong.setText(sosua);
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(SachDetailActivity.this, ThemSachActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     public void capsua(View view) {
@@ -94,4 +103,5 @@ public class SachDetailActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

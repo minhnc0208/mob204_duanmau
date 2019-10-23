@@ -38,6 +38,8 @@ public class ListNguoiDungActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_listnguoidung);
         lvNguoiDung = findViewById(R.id.lvNguoiDung);
+
+
         nguoiDungDAO = new UsersDAO(ListNguoiDungActivity.this);
         dsNguoiDung = nguoiDungDAO.getAllNguoiDung();
         adapter = new NguoidungAdapter(this, dsNguoiDung);

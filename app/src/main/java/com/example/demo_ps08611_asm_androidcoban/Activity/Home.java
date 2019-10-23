@@ -20,7 +20,6 @@ public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +40,7 @@ public class Home extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        if(savedInstanceState == null) {
+        if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new ThongKeFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_thongke);
@@ -79,7 +78,7 @@ public class Home extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.nav_chi:
                 Intent i = new Intent(Home.this, ListSachActivity.class);
                 startActivity(i);
@@ -97,10 +96,12 @@ public class Home extends AppCompatActivity
                 startActivity(q);
                 break;
             case R.id.nav_info:
-                Toast.makeText(this,"DeSign By Nguyễn Cao Minh PS08611 LT14304- Dự Án Mẫu", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "DeSign By Nguyễn Cao Minh PS08611 LT14304- Dự Án Mẫu", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_close:
-                Toast.makeText(this,"Error 4 : Ứng Dụng Không Thể Thoát Bằng Cách Này Do Máy Bạn Quá Cùi .Vui Lòng Mua IPhone 11 Pro Max Thể Sử Dụng Tính Năng VIP này !!!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, Login.class);
+                startActivity(intent);
+//                Toast.makeText(this,"Error 4 : Ứng Dụng Không Thể Thoát Bằng Cách Này Do Máy Bạn Quá Cùi .Vui Lòng Mua IPhone 11 Pro Max Thể Sử Dụng Tính Năng VIP này !!!", Toast.LENGTH_SHORT).show();
                 break;
         }
 

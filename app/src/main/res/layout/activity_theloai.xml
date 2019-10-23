@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/bg2"
     android:layout_margin="15dp"
-    tools:context=".TheLoaiActivity">
+    tools:context=".Activity.TheLoaiActivity">
     <ImageView
         android:layout_marginTop="30dp"
         android:id="@+id/imageView"

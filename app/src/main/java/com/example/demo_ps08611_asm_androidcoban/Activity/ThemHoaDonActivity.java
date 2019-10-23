@@ -31,7 +31,7 @@ public class ThemHoaDonActivity extends AppCompatActivity implements DatePickerD
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("THÊM HOÁ ĐƠN");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_themhoadon);
         edNgayMua = findViewById(R.id.edNgayMua);
         edMaHoaDon = findViewById(R.id.edMaHoaDon);

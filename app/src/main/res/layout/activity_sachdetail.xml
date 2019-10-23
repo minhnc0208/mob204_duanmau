@@ -112,5 +112,19 @@
             android:onClick="quaysua"
             android:text="Quay lại" />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="capsua"
+            android:text="Thêm Sách"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
 
 </LinearLayout>

@@ -30,7 +30,11 @@
 
         </activity>
         <activity android:name=".Activity.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Activity.ListBanChayActivity">
 
@@ -60,11 +64,7 @@
 
         </activity>
         <activity android:name=".Activity.Splash_Srceen_Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Activity.TheLoaiActivity">
 

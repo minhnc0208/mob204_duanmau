@@ -6,7 +6,7 @@
     android:id="@+id/splash"
     android:background="@color/colorPrimary"
     android:layout_height="match_parent"
-    tools:context=".Splash_Srceen_Activity">
+    tools:context=".Activity.Splash_Srceen_Activity">
 
     <LinearLayout
         android:layout_width="match_parent"

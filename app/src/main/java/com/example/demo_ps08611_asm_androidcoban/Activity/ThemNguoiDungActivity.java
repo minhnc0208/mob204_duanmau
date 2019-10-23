@@ -23,7 +23,7 @@ public class ThemNguoiDungActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("THÊM NGƯỜI DÙNG");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_add__user);
         btnThemNguoiDung = findViewById(R.id.btnAddUser);
         edUser = findViewById(R.id.edUser);
